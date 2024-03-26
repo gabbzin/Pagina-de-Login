@@ -7,7 +7,6 @@
     }
 }
 
-
 :root {
     --cor1: #0b438c;
     --cor2: #1a6dd9;
@@ -34,6 +33,8 @@ body {
     background-repeat: no-repeat;
 }
 
+/*Estilo dos links no header*/
+
 header {
     position: absolute;
     width: 100vw;
@@ -53,6 +54,12 @@ li {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+}
+
+/*Estilo da aba de login*/
+
 main {
     display: flex;
     align-items: center;
@@ -64,4 +71,12 @@ main {
     height: 400px;
     width: 300px;
     background-color: white;
+    color: black;
+    display: grid;
+    place-items: center;
+}
+
+.container > h2 {
+    font-family: "Roboto";
+    font-size: 3em;
 }
