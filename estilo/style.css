@@ -1,2 +1,67 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+ /* Configuração pra mudar papel de parede */
+@media (min-width: 600px) {
+    body {
+        background-image: url(../imagens/fundo-login2.jpg);
+    }
+}
 
+
+:root {
+    --cor1: #0b438c;
+    --cor2: #1a6dd9;
+    --cor3: #062540;
+    --cor4: #2b88d9;
+    --cor5: #79DCF2;
+
+    --fonte1: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    background-image: url(../imagens/fundo-login2-telapequena.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: absolute;
+    width: 100vw;
+    height: 50px;
+    background-color: var(--cor3);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li {
+    margin: 15px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    height: 400px;
+    width: 300px;
+    background-color: white;
+}
