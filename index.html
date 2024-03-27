@@ -19,22 +19,25 @@
     <main>
         <div class="container">
             <h2>Login</h2>
-            <form action="cadastro.py">
+            <form id="formulario" action="cadastro.py">
                 <label for="idemail">
-                    E-mail:<input type="email" name="email" id="idemail" minlength="10" maxlength="40" required placeholder="Digite seu email">
+                    E-mail: <br><input type="email" name="email" id="idemail" minlength="10" maxlength="40" required placeholder="Digite seu email">
                     <i class='bx bxs-envelope'></i>
                 </label>
                 <br>
                 <label for="idsenha">
-                    Senha: <input type="password" name="senha" id="idsenha" minlength="8" maxlength="20" required placeholder="Digite sua senha">
+                    Senha: <br><input type="password" name="senha" id="idsenha" minlength="8" maxlength="20" required placeholder="Digite sua senha">
                     <i class='bx bxs-lock-alt'></i>
                 </label>
                 <br>
-                <input type="submit" value="Fazer Login">
             </form>
 
+            <div class="botao">
+                <input type="submit" form="formulario" value="Fazer login" id="botao-enviar">
+            </div>
+
             <div class="registrar-conta">
-                <p>Caso não possue uma conta, <a href="#">registre-se</a> agora.</p>
+                <p>Caso não possue uma conta, <br> <a href="#">registre-se</a> agora.</p>
             </div>
         </div>
     </main>

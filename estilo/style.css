@@ -1,18 +1,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
- /* Configuração pra mudar papel de parede */
-@media (min-width: 600px) {
-    body {
-        background-image: url(../imagens/fundo-login2.jpg);
-    }
-}
 
 :root {
-    --cor1: #0b438c;
-    --cor2: #1a6dd9;
-    --cor3: #062540;
-    --cor4: #2b88d9;
-    --cor5: #79DCF2;
+    --cor1: #364a73;
+    --cor2: #738c16;
+    --cor3: #1d3b45;
+    --cor4: #d9ad5b;
+    --cor5: #f2e0d5;
 
     --fonte1: "Roboto", sans-serif;
 }
@@ -27,9 +21,17 @@ body {
     min-height: 100vh;
     background-color: black;
     color: white;
-    background-image: url(../imagens/fundo-login2-telapequena.jpg);
+    background-image: url(../imagens/fundo-telapequena.jpg);
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ /* Configuração pra mudar papel de parede */
+ @media screen and (min-width: 600px){
+    body {
+        background-image: url(../imagens/fundo-telagrande.jpg);
+    }
 }
 
 /*Estilo dos links no header*/
@@ -69,7 +71,10 @@ main {
 .container {
     height: 400px;
     width: 300px;
-    background-color: white;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(0, 0, 0, 0.233);
+    border-radius: 20px;
     color: black;
     display: grid;
     place-items: center;
@@ -78,4 +83,32 @@ main {
 .container > h2 {
     font-family: "Roboto";
     font-size: 3em;
+    font-weight: 900;
+    color: var(--cor5);
+}
+
+label {
+    color: black;
+    font-size: 20px;
+    font-family: var(--fonte1);
+}
+
+#idsenha, #idemail {
+    padding: 2px;
+}
+
+#botao-enviar {
+    padding: 5px;
+    font-family: var(--fonte1);
+}
+
+.registrar-conta {
+    font-family: var(--fonte1);
+    color: var(--cor5);
+    text-align: center;
+    font-weight: 500;
+}
+
+.registrar-conta > p > a {
+    color: var(--cor3);
 }
