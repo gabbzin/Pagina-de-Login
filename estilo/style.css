@@ -100,6 +100,8 @@ label {
 #botao-enviar {
     padding: 5px;
     font-family: var(--fonte1);
+    background-color: rgba(255, 255, 255, 0.404);
+    border: 2px solid rgba(0, 0, 0, 0.438);
 }
 
 .registrar-conta {
