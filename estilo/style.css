@@ -40,7 +40,7 @@ header {
     position: absolute;
     width: 100vw;
     height: 50px;
-    background-color: #f2e0d5b6;
+    background-color: #f2e0d58f;
 }
 
 ul {
@@ -55,8 +55,11 @@ li {
     cursor: pointer;
 }
 
-a {
+ul > li > a {
     text-decoration: none;
+    color: var(--cor1);
+    font-family: var(--fonte1);
+    font-weight: 700;
 }
 
 /*Estilo da aba de login*/
@@ -113,4 +116,5 @@ label {
 
 .registrar-conta > p > a {
     color: var(--cor3);
+    text-decoration: none;
 }
