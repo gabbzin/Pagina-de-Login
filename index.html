@@ -28,21 +28,19 @@
         <div class="container">
             <h2>Login</h2>
             <form id="formulario" action="cadastro.py">
-                <label for="idemail" method="post">
+                <label for="idemail" method="post" id="labelEmail">
                     E-mail: <br><input type="email" name="email" id="idemail" minlength="10" maxlength="40" required placeholder="Digite seu email">
                     <i class='bx bxs-envelope'></i>
                 </label>
                 <br>
-                <label for="idsenha">
+                <label for="idsenha" id="labelSenha">
                     Senha: <br><input type="password" name="senha" id="idsenha" minlength="8" maxlength="20" required placeholder="Digite sua senha">
                     <i class='bx bxs-lock-alt'></i>
                 </label>
                 <br>
             </form>
 
-            <div class="botao">
-                <input type="submit" form="formulario" value="Fazer login" id="botao-enviar">
-            </div>
+            <input type="submit" form="formulario" value="Fazer login" id="botao-enviar">
 
             <div class="registrar-conta">
                 <p>Caso não possue uma conta, <br> <a href="#">registre-se</a> agora.</p>

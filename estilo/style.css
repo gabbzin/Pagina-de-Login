@@ -75,7 +75,7 @@ main {
     height: 400px;
     width: 300px;
     background-color: transparent;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     border: 2px solid rgba(0, 0, 0, 0.233);
     border-radius: 20px;
     color: black;
@@ -100,11 +100,22 @@ label {
     padding: 2px;
 }
 
+#labelEmail, #labelSenha {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--cor1);
+}
+
 #botao-enviar {
-    padding: 5px;
+    padding: 8px;
     font-family: var(--fonte1);
-    background-color: rgba(255, 255, 255, 0.404);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cor3);
+    background-color: rgba(255, 255, 255, 0.292);
     border: 2px solid rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
 }
 
 .registrar-conta {
@@ -116,5 +127,6 @@ label {
 
 .registrar-conta > p > a {
     color: var(--cor3);
+    font-weight: 800;
     text-decoration: none;
 }
